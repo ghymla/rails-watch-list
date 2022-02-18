@@ -1,14 +1,17 @@
 <br>
 <br>
-<h1>ceci est ma show list </h1>
-<br>
-<ul>
-  <% @list.movies.each do |movie|%>
-    <%= movie.title%>
-  <% end %>
-</ul>
+<div class = "d-flex p-2 flex-column">
+  <h1>ceci est ma show list </h1>
+  <br>
+  <ul>
+    <% @list.movies.each do |movie|%>
+      <li><%= movie.title%></li>
+    <% end %>
+  </ul>
+</div>
 <hr>
 <!-- ceci ne sert a rien mais c'est juste pour montrer que ca fonctionne bien. a voir dans tes routes-->
 <% @list.bookmarks%>
 
 <%= link_to "creation d'un bookmark", new_list_bookmark_path(@list)%>
+<i class = "btn btn-primary"><%= link_to "listening", lists_path%></i>

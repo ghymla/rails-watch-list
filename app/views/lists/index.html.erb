@@ -1,14 +1,15 @@
 <br>
 <br>
-<ul>
-  <% @lists.each do |list| %>
-    <li><%= list.name %> <%= link_to "film qui déchire ca race", list_path(list) %></li>
-  <% end %>
-</ul>
+<div class="container">
+<h1 class = "ml-5">listening</h1>
+  <ul>
+    <% @lists.each do |list| %>
+      <li><%= list.name %> <%= link_to "film qui déchire ca race", list_path(list) %></li>
+    <% end %>
+  </ul>
+</div>
 
-<!--
 <div class = "container">
   <%= cl_image_tag("o2dqdihqetigufxuog57",
         width: 400, height: 200, crop: :fill) %>
 </div>
--->
