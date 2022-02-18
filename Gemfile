@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 # faker gem
 gem 'faker'
+# cloudinary pour des photos de qualiter
+gem 'cloudinary', '~> 1.16.0'
 
 # bootstrap
 gem 'autoprefixer-rails', '10.2.5'
