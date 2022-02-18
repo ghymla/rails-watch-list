@@ -1,0 +1,14 @@
+<br>
+<br>
+<h1>ceci est ma show list </h1>
+<br>
+<ul>
+  <% @list.movies.each do |movie|%>
+    <%= movie.title%>
+  <% end %>
+</ul>
+<hr>
+<!-- ceci ne sert a rien mais c'est juste pour montrer que ca fonctionne bien. a voir dans tes routes-->
+<%= @list.bookmarks%>
+
+<%= link_to "creation d'un bookmark", new_list_bookmark_path(@list)%>
